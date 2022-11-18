@@ -77,7 +77,7 @@ async function factsPrinter(body) {
 
     let printFact = `<header class="display-header"><h1 display-h3>${body.name}<h1/> <h3 class="display-h3"> ${body.latinName}</h3> </header> <article class="display-desc"> <p> ${body.desc}</p> </article> 
     <section class="display-content">  <p> OMKRETS <br> ${body.circumference} km <br> </p> <p>KM FRÅN SOLEN <br> ${body.distance} km<br> </p>
-    <p> MAX TEMPERATUR <br> ${body.temp.day}°C <br> </p> <p> MIN TEMPERATUR <br> ${body.temp.night}°C <br> </p></section> <aside class="display-bottom">  <p> MÅNAR <br> ${body.moons} <br> </p></aside>
+    <p> MAX TEMPERATUR <br> ${body.temp.day}°C <br> </p> <p> MIN TEMPERATUR <br> ${body.temp.night}°C <br> </p></section> <aside class="display-bottom">  <p> MÅNAR <br> ${body.moons.join(`, `)} <br> </p></aside>
     <footer class="display-footer">  <h5> ZoCom</h5>  <button>Gå tillbaka</button> </footer>`;
 
 factsDisplay.insertAdjacentHTML('beforeend', printFact)
