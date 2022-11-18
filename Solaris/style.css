@@ -331,7 +331,8 @@ display: flex;
 justify-content: flex-start;
 align-items: center;
 font-size: 1rem;
-margin-left: 37rem;
+/* margin-left: 37rem; */
+margin-left: 31%;
 max-width: 40%;
 
 }
@@ -504,6 +505,7 @@ font-weight: 800;
  
  }
   
+
 
 
 
