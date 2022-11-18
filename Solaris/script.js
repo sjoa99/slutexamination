@@ -47,7 +47,6 @@ async function createPlanets(bodies) {
 
         
          let printPlanets = `<article class="planet-${planet.id}">
-         ${planet.name} 
          </article>
          ` 
 
